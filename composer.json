@@ -1,0 +1,6 @@
+{
+    "name": "douard.a/chalengephp",
+    "type": "library",
+    "minimum-stability": "stable",
+    "require": {}
+}
