@@ -3,7 +3,7 @@
 <?php
 
 /**
-* Function qui determine si un mot est un isograme
+* Fonction qui determine si un mot est un isogramme
 */
 
 function isIsogram($word){

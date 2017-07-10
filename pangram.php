@@ -2,7 +2,7 @@
 
 
 /**
-* Fonction qui determine si une phrase est un pangrame
+* Fonction qui determine si une phrase est un pangramme
 */
 
 function isPangram($sentence){
@@ -23,7 +23,7 @@ function isPangram($sentence){
     //Chaque lettre est rangée dans un tableau en fonction de ses occurences
 	$array = array_count_values($occurences);
 
-    //Si la longueur du tableau d'occurences >26 alors le mot est un pangram
+    //Si la longueur du tableau d'occurences >26 alors le mot est un pangramme
 	if(count($array) >= 26) {
 		return true;
 	}

@@ -6,11 +6,11 @@
 
 function rangementParExtentions($folder){
 
-	//Les noms des fichiers sont placés dans un tableau (en elevant les fichiers qui commencent par "."(current directory) et ".."(parent directory) avec array_diff()  
+	//Les noms des fichiers sont placés dans un tableau (en elevant les elements qui commencent par "."(current directory) et ".."(parent directory) avec array_diff()  
 	$dossierARanger = array_diff(scandir($folder), array(".", "..") );
 
 
-
+    //pour chaque element du doosier
 	foreach($dossierARanger as $key => $filename){
 
 
@@ -25,11 +25,10 @@ function rangementParExtentions($folder){
 			unset($dossierARanger[$key]);
 		}
 		
-		var_dump($dossierARanger);
         //On verifie que le fichier existe
 		if(is_file($directory)){
 
-		//On verifie que le dossier n'existe pas déjà
+		    //On verifie que le dossier n'existe pas déjà
 			if(!is_dir("$folder/$extension")){ 
                 //On crée le dossier 
 				mkdir("$folder/$extension", 0755);
